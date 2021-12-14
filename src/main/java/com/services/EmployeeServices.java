@@ -26,14 +26,7 @@ public class EmployeeServices {
 		employee.setId(id);
 		employee.setSalary(salary);
 
-		try {
-			FileWriter write = new FileWriter("src/main/resources/output.txt");
-			write.write(employee.toString());
-			write.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		System.out.println(employee);
 
 		scan.close();
 
