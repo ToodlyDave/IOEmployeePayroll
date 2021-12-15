@@ -1,13 +1,11 @@
 package com.services;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 import com.entities.EmployeePayroll;
 
 public class EmployeeServices {
-
+	
 	public static void main(String[] args) {
 
 		EmployeePayroll employee = new EmployeePayroll();
