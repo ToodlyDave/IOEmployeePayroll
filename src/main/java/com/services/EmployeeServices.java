@@ -1,5 +1,8 @@
 package com.services;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 import com.entities.EmployeePayroll;
@@ -25,7 +28,17 @@ public class EmployeeServices {
 		employee.setSalary(salary);
 
 		System.out.println(employee);
+		
+		Path path = Paths.get("src/main/resources/someFile.txt");
+		FileServices.doesFileExist(path);
+		
+		FileServices.deleteFile(path);
+		
+		FileServices.createDirectory(Paths.get("src/main/resources/someDirectory"));
+		
+		FileServices.createFile(path);
 
+		FileServices.listFiles(Paths.get("src/main/resources/"));
 		scan.close();
 
 	}
